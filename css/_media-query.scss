@@ -1,0 +1,951 @@
+@media only screen and (min-width:1680px) and(max-width:1920px){
+/*=============Common-section==============*/
+
+    html,body{
+        font-size: 24px; 
+    }
+    .para{
+        line-height: 32px;
+        font-size: .85rem;
+    }
+     
+    .tag{
+        padding: 15px 20px;
+        background-color: #6D4C41;
+        color: #f1f1f1;
+    }
+    
+    /*=======Required-Extend=========*/ 
+        %allButton{
+            padding: 15px 60px;
+         
+        }
+        %section{
+            padding-bottom: 70px;
+        }
+
+        
+
+/*=============Header-section==============*/
+.header-section{
+    height: 650px;
+    nav{
+        .logo{
+            width: 8%; 
+        }
+        .nav-whole{
+            width: 92%;
+        }
+    }
+
+    .head-content{
+        padding: 250px 0 0 0;
+    }
+}
+.nav-whole{
+
+    li{
+        a{
+            font-size: 0.85rem;
+        }
+    }
+}
+
+
+/*==============Offer-section==============*/
+.offer-section{
+
+    .offer-content{
+        padding: 150px 15px 50px 15px;
+
+        h2,h4,p{ 
+            padding-bottom: 45px;
+        }
+    }
+
+
+}
+
+
+/*=============Trend-section==============*/
+
+/*=============Collection-section==============*/
+
+
+/*=============Categories-section==============*/
+.girl-fashion{
+
+
+    img{
+        top: -300px;
+    }
+}
+/*=============Feature-section==============*/
+/*=============Testimonials-section==============*/
+.testimonials-section{
+
+    .test-content{
+        padding: 70px 15px 0 15px;
+
+        h2{
+            padding: 30px 0;
+        }
+
+        p{
+            padding: 30px 0;
+        }
+           
+    }
+}
+
+/*=============Blog-section==============*/
+/*=============Blog-section==============*/
+/*=============Benefits-section==============*/
+.benefits-section{
+
+    .benefit{
+        width: 33%;
+        h2{
+            padding: 25px 0;
+        }
+
+    }
+
+}
+/*=============Contact-section==============*/
+
+/*=============Footer-section==============*/
+.footer-section{
+
+    .footer-container{
+        width: 50%;
+
+    }
+
+}
+    .footer-nav{
+
+        ul{
+
+            li{
+
+                a{
+                    font-size: 0.75rem;
+                }
+            }   
+        }
+
+    }
+}
+
+
+@media only screen and (min-width:1270px) and(max-width:1680px){
+/*=============Common-section==============*/
+
+    html,body{
+        font-size: 22px; 
+    }
+    .para{
+        line-height: 26px;
+    }
+  
+
+    .tag{
+        padding: 15px 20px;
+        background-color: #6D4C41;
+        color: #f1f1f1;
+    }
+    
+    /*=======Required-Extend=========*/ 
+        %allButton{
+            padding: 12px 48px;
+        
+        }
+        %section{
+            padding-bottom: 60px;
+        }
+
+        %bgPorperty{
+            padding: 150px;
+        }
+
+/*=============Header-section==============*/
+    .header-section{
+        height: 90%;
+        nav{
+            .logo{
+                width: 8%; 
+            }
+            .nav-whole{
+                width: 92%;
+            }
+        }
+
+        .head-content{
+            padding: 200px 0 0 0;
+        }
+    }
+
+
+
+/*==============Offer-section==============*/
+.offer-section{
+
+    .offer-content{
+        padding: 130px 15px 40px 15px;
+
+        h2,h4,p{ 
+            padding-bottom: 35px;
+        }
+    }
+
+
+}
+/*=============Trend-section==============*/
+
+/*=============Collection-section==============*/
+/*=============Categories-section==============*/
+.girl-fashion{
+
+
+    img{
+        top: -290px;
+    }
+}
+/*=============Feature-section==============*/
+/*=============Testimonials-section==============*/
+.testimonials-section{
+
+    .test-content{
+        padding: 70px 15px 0 15px;
+
+        h2{
+            padding: 30px 0;
+        }
+
+        p{
+            padding: 30px 0;
+        }
+           
+    }
+}
+/*=============Blog-section==============*/
+/*=============Blog-section==============*/
+/*=============Benefits-section==============*/
+.benefits-section{
+
+    .benefit{
+        width: 33%;
+        h2{
+            padding: 20px 0;
+        }
+
+    }
+
+}
+/*=============Contact-section==============*/
+
+/*=============Footer-section==============*/
+}
+@media only screen and(max-width:991px){
+/*=============Common-section==============*/
+
+    
+    .para{
+        line-height: 24px;
+    }
+    .large-head{
+        font-size: 2.2rem;
+    }
+    .medium-head{
+        font-size: 1.8rem;
+    }   
+   
+
+    
+    
+    /*=======Required-Extend========= 
+        %allButton{
+            padding: 15px 60px;
+        
+        }
+        %section{
+            padding-bottom: 50px;
+        }
+
+        %bgPorperty{
+            padding: 100px;
+        }
+    */
+/*=============Header-section==============*/
+    .header-section{
+
+        nav{
+
+            .logo{
+                width: 8%; 
+            }
+            .nav-whole{
+                width: 92%;
+            }
+        }
+      
+        .head-content{
+            padding: 120px 0 0 0;
+        }
+
+    }
+
+
+
+/*==============Offer-section==============*/
+.offer-section{
+
+    .offer-content{
+        padding: 30px 10px;
+
+        h2,h4,p{
+            padding-bottom: 20px;
+        }       
+
+    }
+
+
+}
+/*=============Trend-section==============*/
+.trend-section{
+
+    .review{
+        padding: 5px;
+    
+        h2{
+            padding-bottom: 5px;
+        }
+
+        h3{
+            margin-bottom: 0;
+        }   
+        p{
+            padding: 10px 0 0 0 ;
+            line-height: 22px;
+        }
+    }
+
+    
+}
+/*=============Collection-section==============*/
+
+/*=============Categories-section==============*/
+.categories-section{
+
+    .men-cate{
+        width: 100%;
+
+    }
+    .woman-cate{
+        width: 100%;
+        .image{
+            
+            img{    
+                height: 100%;
+                width: 120px;
+                object-fit: contain;
+            }
+
+        }
+    }
+  
+}
+
+.girl-fashion{
+    background-color: #E5E8B1;
+    height: 50px;
+    justify-content: center;
+}
+/*=============Feature-section==============*/
+
+/*=============Testimonials-section==============*/
+
+
+
+/*=============Blog-section==============*/
+/*=============Blog-section==============*/
+/*=============Benefits-section==============*/
+.benefits-section{
+
+    .benefit{
+        padding: 20px 0 0 0;
+    }
+}
+/*=============Contact-section==============*/
+
+/*=============Footer-section==============*/
+}
+@media only screen and(max-width:768px){
+/*=============Common-section==============*/
+    .tag{
+        padding: 12px 20px;
+       
+    }
+    
+    /*=======Required-Extend=========*/ 
+        %allButton{
+            padding: 8px 35px;
+        
+        }
+        
+
+/*=============Header-section==============*/
+.header-section{
+
+        .navigation{
+            position: relative;
+            .logo{
+                width: 10%; 
+            }
+            .nav-whole{
+                width: 100%;
+                flex-direction: column;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                padding: 50px;
+                background-color: rgba(0, 0, 0, 0.253);
+                li{
+                    display: inline;
+                    padding: 10px;
+                    transition: all 0.3s ease;
+                }
+                li:hover{
+                    background-color: #f1f1f171;
+                    color: #000;
+                }
+
+            }
+
+            .nav-icon{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: center;
+            }
+/*
+            .nav-icon{
+                
+               .up-dash, .down-dash{
+                    width: 25px;
+                    height: 5px; 
+
+                    background-color: #f1f1f1;
+                }
+            }*/
+
+        }
+
+       
+      
+    }
+
+
+
+/*==============Offer-section==============*/
+.offer-section{
+
+    .offer-content{
+        width: 100%;
+        padding: 50px 70px;
+        h2,h4,p{
+            padding-bottom: 25px;
+        }       
+
+    }
+    .offer-image{
+        width: 100%;
+    }
+
+}
+/*=============Trend-section==============*/
+.trend-section{
+
+    .review{
+        width: 50%;
+        padding: 20px;
+    
+        h3{
+            margin: 15px 0;
+        }
+
+        p{
+            padding: 15px 0;
+            line-height: 24px;
+        }
+    }
+    
+}
+/*=============Collection-section==============*/
+.collection-section{
+
+    .collection, .autumn{
+        width: 50%;
+    }
+    .trending{
+        width: 100%;
+        order: 2;
+    }
+   
+
+}
+/*=============Categories-section==============*/
+
+.girl-fashion{
+    padding: 20px 50px;
+    justify-content: flex-start;
+    height: 100px;
+}
+/*=============Feature-section==============*/
+   .feature-section{
+
+        .feature-content{
+            width: 50%;
+            
+        }
+    }
+/*=============Testimonials-section==============*/
+.testimonials-section{
+
+    .test-image{
+        width: 100%;
+
+
+    }
+    .test-content{
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+}
+/*=============Blog-section==============*/
+.blog-section{
+
+    .blog-content{
+        width: 100%;
+    }
+    .blog-image{
+        width: 100%;
+    }
+}
+/*=============Blog-section==============*/
+/*=============Benefits-section==============*/
+.benefits-section{
+
+    .benefit{   
+
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .benefit::before{
+        margin: 20px 0;
+    }
+
+}
+/*=============Blog-section==============*/
+
+/*=============Contact-section==============*/
+
+/*=============Footer-section==============*/
+    .footer-section{
+
+        .footer-container{
+            width: 85%;
+
+        }
+
+    }
+}
+@media only screen and(max-width:576px){
+/*=============Common-section==============*/
+
+   
+    .para{
+        line-height: 24px;
+    }
+    .large-head{
+        font-size: 2rem;
+    }
+    .medium-head{
+        font-size: 1.5rem;
+    }   
+    .small-head{
+        font-size: 1.2rem;
+    }
+
+    
+    
+    /*=======Required-Extend========= */
+        %allButton{
+            padding: 8px 30px;
+        }
+     
+
+/*=============Header-section==============*/
+    .header-section{
+
+        nav{
+
+            .logo{
+                width: 15%; 
+            }
+            .nav-icon{
+                width: 85%;
+            }
+        }
+
+         
+    }
+
+
+
+/*==============Offer-section==============*/
+    .offer-section{
+
+        .offer-content{
+            padding: 50px 20px;
+                
+
+        }
+    
+
+    }
+/*=============Trend-section==============*/
+    .trend-section{
+
+        .review{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+/*=============Collection-section==============*/
+    .collection-section{
+
+        .collection, .autumn, .trending{
+            width: 100%;
+            order: 1;
+        }
+    
+    
+
+    }
+    /*=============Categories-section==============*/
+    .categories-section{
+        .men-cate, .woman-cate{
+            padding: 0;
+        }
+        .image{
+
+            img{
+                height: 120px;
+                object-fit: contain;
+            }
+        }
+    }
+    .men-cate{
+        .head-cate{
+            padding-bottom: 15px;
+            margin-top: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .casual-men-cate{
+        margin: 10px 0;
+
+        .casual{
+            padding: 10px;
+        }
+    }
+
+
+    .men-items{
+
+        .men-watch, .men-sheo{
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+
+    .woman-cate{
+
+        .woman-items{
+
+            .sheo,.bag{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+    .girl-fashion{
+        height: 70px;
+    }
+    .woman-sport{
+        padding: 30px 10px;
+    }
+
+
+    /*=============Feature-section==============*/
+    .feature-section{
+
+        .feature-content{
+            width: 100%;
+
+        }
+    }
+    /*=============Testimonials-section==============*/
+    /*=============Blog-section==============*/
+    /*=============Blog-section==============*/
+    /*=============Benefits-section==============*/
+    .benefits-section{
+
+    .benefit{   
+
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .benefit::before{
+        margin: 20px 0;
+    }
+
+}
+    /*=============Contact-section==============*/
+    .contact-section{
+
+        .contact-image{
+            width: 10%;
+            img{
+                width: 100%;
+             
+            }
+
+        }
+
+        .contact-us{
+            width: 75%;
+        }
+    }
+    /*=============Footer-section==============*/
+    .footer-section{
+
+        .footer-container{
+            width: 100%;
+
+        }
+
+    }
+}
+@media only screen and(max-width:480px){
+/*=============Common-section==============*/
+
+  
+    .para{
+        line-height: 22px;
+    }
+    
+   
+
+ 
+    
+    /*=======Required-Extend========= */
+        %allButton{
+            padding: 8px 20px;
+        
+        }
+      
+
+/*=============Header-section==============*/
+    .header-section{
+
+        nav{
+
+            .logo{
+                width: 18%; 
+            }
+            
+            .nav-icon{
+                width: 82%;
+            }
+
+        }
+
+      
+    }
+
+
+
+    /*==============Offer-section==============*/
+    .offer-section{
+
+        .offer-content{
+            padding: 40px 10px;
+
+            h2,h4,p{
+                padding-bottom: 15px;
+            }    
+
+        }
+   
+
+    }
+    /*=============Trend-section==============*/
+    .trend-section{
+
+        .review{
+            padding: 0;
+        }
+
+    }
+    /*=============Collection-section==============*/
+
+
+
+    /*=============Categories-section==============*/
+    .men-cate{
+
+        .head-cate{
+            width: 100%;
+        }
+    }
+
+    /*=============Feature-section==============*/
+    /*=============Testimonials-section==============*/
+    /*=============Blog-section==============*/
+    /*=============Blog-section==============*/
+    /*============Benefits-section==============*/
+        .benefits-section{
+
+            .benefit{   
+
+                width: 100%;
+                padding: 20px 10px;
+            }
+
+            .benefit::before{
+                margin: 0;
+            }
+
+        }
+    /*=============Contact-section==============*/
+        .contact-section{
+
+            .contact-image{
+                width: 12%;
+            }
+
+            .contact-us{
+                width: 95%;
+
+            }
+        }
+    /*=============Footer-section==============*/
+    .copy-right{
+        padding: 10px 0;
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and(max-width:380px){
+/*=============Common-section==============
+
+    html,body{
+        font-size: 26px; 
+    }
+    .para{
+        line-height: 28px;
+    }
+        .large-head{
+        font-size: 2.5rem;
+    }
+    .medium-head{
+        font-size: 2rem;
+    }   
+    .small-head{
+        font-size: 1.5rem;
+    }
+
+    .tag{
+        padding: 15px 20px;
+        background-color: #6D4C41;
+        color: #f1f1f1;
+    }
+    
+    /*=======Required-Extend========= 
+        %allButton{
+            padding: 15px 60px;
+        
+        }
+        %section{
+            padding-bottom: 50px;
+        }
+
+        %bgPorperty{
+            padding: 100px;
+        }
+    */
+    /*=============Header-section==============*/
+    .header-section{
+
+        nav{
+
+            .logo{
+                width: 20%; 
+            }
+            
+            .nav-icon{
+                width: 80%;
+            }
+
+        }
+
+       
+      
+    }
+
+
+
+    /*==============Offer-section==============*/
+        .offer-section{
+
+            .offer-content{
+                padding: 25px 10px;
+            
+
+            }
+        
+
+        }
+    /*=============Trend-section==============*/
+
+    /*=============Collection-section==============*/
+    /*=============Categories-section==============*/
+    /*=============Feature-section==============*/
+    /*=============Testimonials-section==============*/
+    /*=============Blog-section==============*/
+    /*=============Blog-section==============*/
+    /*=============Benefits-section==============*/
+    /*=============Contact-section==============*/
+     .contact-section{
+
+           
+
+            .contact-us{
+                width: 100%;
+                padding: 0 10px;
+
+            }
+        }
+    /*=============Footer-section==============*/
+}

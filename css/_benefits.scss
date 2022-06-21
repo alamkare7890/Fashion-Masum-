@@ -1,0 +1,34 @@
+.benefits-section{
+    @extend %section;
+
+    .benefit{
+        width: 32%;
+        padding: 10px 30px;
+        text-align: center;
+        position: relative;
+        /*border-top: 3px solid #CFD8DC;*/
+        
+        h2{
+            color: #757575;
+        }
+
+        p{
+            color: #ADADAD;
+        }
+
+
+    }
+
+    .benefit::before{
+        content: "";
+        width: 25%;
+        height: 5px;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        background-color: #75757554;
+    }
+    
+
+}

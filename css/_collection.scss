@@ -1,0 +1,84 @@
+
+@mixin overLay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.315);
+    transition: all 0.3s ease;
+
+}
+.collection-section{
+    @extend %section;
+    text-align: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .autumn{
+        width: 30%;
+        position: relative; 
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        h2{
+            color: #f1f1f1;
+            position: absolute;
+            left: 50px;
+            bottom: 10%;
+        }
+    }
+
+    .autumn::before{
+       @include overLay();
+    }
+    .autumn:hover:before{
+        opacity: 0;
+    }
+    .trending{
+        width: 40%;
+        position: relative;        
+        cursor: pointer;
+        transition: all 0.3s ease;
+        .trend20{
+            color: #f1f1f1;
+            position: absolute;
+            bottom: 50%;  
+            right: 10%;
+        }
+       
+    }
+    .trending::before{
+       @include overLay();
+
+    }
+    .trending:hover:before{
+        opacity: 0;
+    }
+    .collection{
+        width: 30%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;        
+
+        h2{
+            color: #f1f1f1;
+            position: absolute;
+            left: 50px;
+            bottom: 10%;
+
+        }
+    }
+
+    .collection::before{
+       @include overLay();
+
+    }
+
+    .collection:hover:before{
+        opacity: 0;
+    }
+
+}

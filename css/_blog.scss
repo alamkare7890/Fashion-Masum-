@@ -1,0 +1,60 @@
+.blog-section{
+    @extend %section;
+    .blog-content{
+        width: 50%;
+        position: relative;
+        padding: 50px 50px 50px 50px;
+        background-color: #8B7D7B;
+        color: #f1f1f1;
+        .slide-blog-content{
+            padding: 10px;
+        }
+        a{
+            @extend %allButton;
+            padding: 0;
+            color: #f1f1f1;
+            font-weight: 400; 
+        }
+    }
+
+    .blog-image{
+        width: 50%;
+        img{
+            height: 100%;
+        }
+    }
+
+
+/*To create slider button*/
+    .slide-next{
+        background-color: #21212161;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        .fas{
+            color: #f1f1f1;
+            font-size: 1.5rem;
+        }
+    }
+
+    .slide-prev{
+        padding: 10px;
+        background-color: #21212161;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-left: 30px;
+        .fas{
+            color: #f1f1f1;
+            font-size: 1.5rem;
+
+        }
+    }
+}

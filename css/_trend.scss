@@ -1,0 +1,33 @@
+.trend-section{
+    @extend %section;
+
+    .review{
+        width: 25%;
+        padding: 10px;
+
+        img{
+            width: 100%;
+        }
+        h2{
+            color: #414141;
+        }
+        h3{
+            margin-bottom: 15px;
+        }
+        p{
+            color: #4E4E4E;
+        }         
+    }
+}
+.rate{
+    padding: 10px 0 0 0;
+    a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 0;
+        .fa{
+            color: #000;
+            font-size: 1.2rem;
+        }
+    }
+}

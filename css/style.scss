@@ -1,0 +1,119 @@
+/*=============Common-section==============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+    .large-head{
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    .medium-head{
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }   
+    .small-head{
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+    .para{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 10px 0; 
+    }
+    .container{
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1270px;
+
+    }
+    .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .tag{
+        padding: 8px 18px;
+        background-color: #6D4C41;
+        color: #f1f1f1;
+
+    }
+    %centerContent{
+        align-items: center;
+        justify-content: center;
+    }
+/*=======Required-Extend=========*/ 
+    %allButton{
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 40px;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    %section{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    %bgProperty{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px;
+        min-height: 350px;
+
+    }
+
+
+
+
+/*=============Header-section==============*/
+@import "header";
+
+
+
+/*==============Offer-section==============*/
+@import "offer";
+
+/*=============Trend-section==============*/
+@import "trend";
+
+
+/*=============Collection-section==============*/
+@import "collection";
+
+/*=============Categories-section==============*/
+@import "categories";
+
+/*=============Feature-section==============*/
+@import "feature";
+
+/*=============Testimonials-section==============*/
+@import "testimonial";
+
+/*=============Blog-section==============*/
+@import "blog";
+/*=============Benefits-section==============*/
+@import "benefits";
+/*=============Contact-section==============*/
+@import "contact";
+/*=============Footer-section==============*/
+@import "footer";
+/*========Media_query=======*/
+@import "media-query";
+/*========Animation=======*/
+@import "animation";
+
