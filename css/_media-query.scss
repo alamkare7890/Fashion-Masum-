@@ -404,6 +404,7 @@
                 width: 10%; 
             }
             .nav-whole{
+                display: none;
                 width: 100%;
                 flex-direction: column;
                 position: absolute;
@@ -802,7 +803,11 @@
     .trend-section{
 
         .review{
-            padding: 0;
+            padding: 15px 0;
+
+            p{
+                padding: 5px 0;
+            }
         }
 
     }

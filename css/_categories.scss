@@ -5,7 +5,12 @@
     padding: 25px 5px;
 
 }
+@mixin positionItem{
+    position: relative;
+    z-index: 0;
+    transition: all 0.8s ease;
 
+}
 .categories-section{
     width: 100%;
     .men-cate, .woman-cate{
@@ -51,6 +56,7 @@
 
 }
 .casual-men-cate{
+    @include positionItem();
     width: 100%;
     background-color: #d9d8c9;
     margin: 25px 0;
@@ -67,6 +73,7 @@
         }
         .detail-btn{
             @extend %allButton;
+            transition: all 0.3s ease;
             border: 1px solid #212121;
             color: #3E2723;
         }
@@ -78,6 +85,8 @@
    
     .men-watch, .men-sheo{
         @include itemName();
+        @include positionItem();
+
         
 
     }
@@ -91,6 +100,8 @@
 
         .sheo,.bag{
             @include itemName();
+            @include positionItem();
+
 
 
         }
@@ -100,12 +111,16 @@
 }
 .woman-sport{
     width: 100%;
+    @include positionItem();
+    @include positionItem();
+
 
     padding: 50px 20px;
     background-color: #E5E8B1;
     .sport{
         width: 50%;
-        padding: 10px;
+        padding: 10px;  
+
     }
 
     h2{
@@ -120,6 +135,8 @@
         @extend %allButton;
         border: 1px solid #212121;
         color: #3E2723;
+        transition: all 0.3s ease;
+
     }
 
    

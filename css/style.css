@@ -10,6 +10,7 @@ html, body {
   height: 100%;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .large-head {
@@ -55,6 +56,11 @@ html, body {
   color: #f1f1f1;
 }
 
+.header-section .head-content .button-box {
+  align-items: center;
+  justify-content: center;
+}
+
 /*=======Required-Extend=========*/
 .blog-section .blog-content a, .woman-sport .detail-btn, .casual-men-cate .casual .detail-btn, .offer-section .offer-content .detail-btn {
   text-decoration: none;
@@ -82,18 +88,18 @@ html, body {
   z-index: 0;
   background-image: url(../image/jpg/banner-video_urcivp.jpg);
 }
-.header-section nav {
+.header-section .navigation {
   align-items: center;
   width: 100%;
   padding: 30px 0;
 }
-.header-section nav .logo {
+.header-section .navigation .logo {
   width: 5%;
 }
-.header-section nav .logo img {
+.header-section .navigation .logo img {
   width: 100%;
 }
-.header-section nav .nav-whole {
+.header-section .navigation .nav-whole {
   justify-content: flex-end;
   width: 95%;
 }
@@ -106,6 +112,25 @@ html, body {
 }
 .header-section .head-content h2 {
   color: #E6E6E6;
+  padding-bottom: 5px;
+}
+.header-section .head-content .button-box {
+  margin: 0 auto;
+  color: #f1f1f1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  transition: all 0.3s ease;
+}
+.header-section .head-content .button-box a {
+  display: inline-block;
+  text-decoration: none;
+}
+.header-section .head-content .button-box a .fas {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #f1f1f1;
 }
 .header-section .nav-icon {
   display: none;
@@ -141,12 +166,19 @@ html, body {
 }
 .nav-whole li {
   list-style-type: none;
-  padding-right: 30px;
+  padding: 2px;
+  margin-left: 15px;
   position: relative;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 .nav-whole li a {
   text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
   color: #D5CAC5;
+  transition: all 0.4s ease;
 }
 
 /*==============Offer-section==============*/
@@ -168,6 +200,9 @@ html, body {
 .offer-section .offer-content .detail-btn {
   border: 1px solid #F4F5F5;
   color: #F4F5F5;
+  position: relative;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 .offer-section .offer-content .detail-btn .fa {
   font-size: 1rem;
@@ -345,6 +380,9 @@ html, body {
 }
 
 .casual-men-cate {
+  position: relative;
+  z-index: 0;
+  transition: all 0.8s ease;
   width: 100%;
   background-color: #d9d8c9;
   margin: 25px 0;
@@ -362,6 +400,7 @@ html, body {
   padding-bottom: 30px;
 }
 .casual-men-cate .casual .detail-btn {
+  transition: all 0.3s ease;
   border: 1px solid #212121;
   color: #3E2723;
 }
@@ -374,6 +413,9 @@ html, body {
   background-color: #E4D1D1;
   margin: 20px 0;
   padding: 25px 5px;
+  position: relative;
+  z-index: 0;
+  transition: all 0.8s ease;
 }
 
 .woman-cate {
@@ -387,10 +429,19 @@ html, body {
   background-color: #E4D1D1;
   margin: 20px 0;
   padding: 25px 5px;
+  position: relative;
+  z-index: 0;
+  transition: all 0.8s ease;
 }
 
 .woman-sport {
   width: 100%;
+  position: relative;
+  z-index: 0;
+  transition: all 0.8s ease;
+  position: relative;
+  z-index: 0;
+  transition: all 0.8s ease;
   padding: 50px 20px;
   background-color: #E5E8B1;
 }
@@ -409,6 +460,7 @@ html, body {
 .woman-sport .detail-btn {
   border: 1px solid #212121;
   color: #3E2723;
+  transition: all 0.3s ease;
 }
 
 .girl-fashion {
@@ -666,6 +718,8 @@ ul.slick-dots li button {
   padding: 20px 25px;
   color: #3D3D3D;
   background: transparent;
+  transition: all 0.5s ease;
+  border-radius: 35px;
 }
 
 /*=============Footer-section==============*/
@@ -688,6 +742,7 @@ ul.slick-dots li button {
 .footer-nav ul li {
   list-style-type: none;
   padding: 10px;
+  transition: all 0.5s ease;
 }
 .footer-nav ul li a {
   text-decoration: none;
@@ -709,10 +764,12 @@ ul.slick-dots li button {
   margin-left: 50px;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 .footer-container .footer-icon a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5411764706);
+  transition: all 0.5s ease;
 }
 .footer-container .footer-icon a .fab {
   font-size: 1.5rem;
@@ -1028,6 +1085,7 @@ ul.slick-dots li button {
     width: 10%;
   }
   .header-section .navigation .nav-whole {
+    display: none;
     width: 100%;
     flex-direction: column;
     position: absolute;
@@ -1284,7 +1342,10 @@ ul.slick-dots li button {
 
   /*=============Trend-section==============*/
   .trend-section .review {
-    padding: 0;
+    padding: 15px 0;
+  }
+  .trend-section .review p {
+    padding: 5px 0;
   }
 
   /*=============Collection-section==============*/
@@ -1389,4 +1450,156 @@ ul.slick-dots li button {
 
   /*=============Footer-section==============*/
 }
-/*========Animation=======*//*# sourceMappingURL=style.css.map */
+/*========Animation=======*/
+/*========navSection========*/
+.nav-whole {
+  position: relative;
+}
+.nav-whole li::before, .nav-whole li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2%;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+.nav-whole li::before {
+  top: 0;
+  left: 0;
+}
+.nav-whole li:after {
+  bottom: 0;
+  right: 0;
+}
+.nav-whole li:hover:before {
+  width: 100%;
+}
+.nav-whole li:hover:after {
+  width: 100%;
+}
+.nav-whole li a::before, .nav-whole li a::after {
+  content: "";
+  width: 1%;
+  height: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  transition: all 0.4s ease;
+}
+.nav-whole li a::before {
+  top: 0;
+  right: 0;
+}
+.nav-whole li a::after {
+  bottom: 0;
+  left: 0;
+}
+.nav-whole li a:hover:after {
+  height: 100%;
+}
+.nav-whole li a:hover:before {
+  height: 100%;
+}
+
+.offer-section .offer-content .detail-btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #f1f1f1;
+  transition: all 0.8s ease;
+}
+.offer-section .offer-content .detail-btn:hover {
+  color: #3E2723;
+  border: 1px solid #3E2723;
+}
+.offer-section .offer-content .detail-btn:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.casual-men-cate::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(33, 33, 33, 0.062745098);
+  transition: all 0.8s ease;
+}
+
+.casual-men-cate:hover:before {
+  width: 100%;
+}
+
+.men-items .men-watch::before, .men-items .men-sheo::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(33, 33, 33, 0.062745098);
+  transition: all 0.8s ease;
+}
+.men-items .men-watch:hover:before, .men-items .men-sheo:hover:before {
+  width: 100%;
+}
+
+.woman-cate .woman-items .sheo::before, .woman-cate .woman-items .bag::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(33, 33, 33, 0.062745098);
+  transition: all 0.8s ease;
+}
+.woman-cate .woman-items .sheo:hover:before, .woman-cate .woman-items .bag:hover:before {
+  width: 100%;
+}
+
+.woman-sport::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(33, 33, 33, 0.062745098);
+  transition: all 0.8s ease;
+}
+
+.woman-sport:hover:before {
+  width: 100%;
+}
+
+.casual-men-cate .casual .detail-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.woman-sport .detail-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/*========Footer-Icon======*/
+.footer-nav ul li:hover {
+  -webkit-text-decoration: 3px #3E2723 underline;
+          text-decoration: 3px #3E2723 underline;
+}
+
+.footer-container .footer-icon a:hover {
+  color: #3E2723;
+}
+
+.contact-section form .inside-button .form-btn:hover {
+  border: 1px solid #3E2723;
+}/*# sourceMappingURL=style.css.map */

@@ -168,6 +168,12 @@ $(document).ready(function () {
   */
  
   /*Dom*/
+  /*=========nav-icon==========*/
+  $("#navBtn").click(function () {
+  
+    $("#openNav").slideToggle();
+    
+  })
   
   
   /*======Animation (AOS)=====installation=====*/

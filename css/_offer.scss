@@ -20,6 +20,9 @@
             @extend %allButton;
             border: 1px solid #F4F5F5;
             color: #F4F5F5;
+            position: relative;
+            z-index: 0;
+            transition: all 0.5s ease;
 
             .fa{
                 font-size: 1rem;
