@@ -8,8 +8,8 @@
       
         img{
             width: 100%;
-            position: relative;
-            transform: scaleY(1.5);
+            height: 400px;
+            object-fit: cover;
         }
     }
 
@@ -29,23 +29,18 @@
     }
 }
 
-.btn-box{
-    position: relative;
-    bottom: -35px;
-    left: -30px;
-    background-color: red;
-    width: 100px;
-    height: 20px;
-}
+
 .slick-next{
     background-color: #21212161;
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     cursor: pointer;
     padding: 10px;
+    z-index: 10;
+    transition: all 0.4s linear;
     .fas{
         color: #f1f1f1;
         font-size: 1.5rem;
@@ -59,8 +54,10 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: -50px;
     right: 0;
+    z-index: 10;
+    transition: all 0.4s linear;
     .fas{
         color: #f1f1f1;
         font-size: 1.5rem;
@@ -68,5 +65,9 @@
     }
 }
 
+   .slick-next:hover, .slick-prev:hover{
+        color: #8B7D7B;
+        background-color: #f1f1f150;
 
+    }
 

@@ -365,11 +365,46 @@
 /*=============Feature-section==============*/
 
 /*=============Testimonials-section==============*/
+.testimonials-section{
 
+    .test-image{
+        width: 100%;
+
+    }
+    .test-content{
+        width: 60%;
+        margin: 0 auto;
+        padding: 70px 30px;
+
+    }
+}
 
 
 /*=============Blog-section==============*/
+.blog-section{
+    background-color: #8B7D7B;
+    padding-bottom: 0;
+    .blog-content{
+        width: 60%;
+        margin: 0 auto;
+        order: 2;
+        padding: 70px 30px;
+    }
+    .blog-image{
+        width: 100%;
+        order: 0;
+        img{
+            object-position: top;
+        }
+    }
+    .slide-next{
+        bottom: -50px;
+    }
+}
 /*=============Blog-section==============*/
+
+
+
 /*=============Benefits-section==============*/
 .benefits-section{
 
@@ -703,8 +738,36 @@
 
         }
     }
-    /*=============Testimonials-section==============*/
+
+
+    .testimonials-section{
+
+        .test-image{
+            width: 100%;
+
+            img{
+                height: 350px;
+            }
+
+        }
+
+    }
+        
     /*=============Blog-section==============*/
+    .blog-section{
+
+        .blog-content{
+            width: 100%;
+        }
+        .blog-image{
+            width: 100%;
+
+            img{
+                height: 350px;
+            }
+
+        }
+    }
     /*=============Blog-section==============*/
     /*=============Benefits-section==============*/
     .benefits-section{
@@ -825,7 +888,40 @@
 
     /*=============Feature-section==============*/
     /*=============Testimonials-section==============*/
+    .testimonials-section{
+
+        .test-image{
+            width: 100%;
+
+            img{
+                height: 300px;
+            }
+
+        }
+        .test-content{
+            padding: 20px 10px;
+        }
+    }
+        
     /*=============Blog-section==============*/
+.blog-section{
+
+    .blog-content{
+        padding: 20px 10px;
+
+    }
+    .blog-image{
+        width: 100%;
+
+        img{
+            height: 300px;
+        }
+
+    }
+    .slide-next{
+        bottom: -15px;
+    }
+}
     /*=============Blog-section==============*/
     /*============Benefits-section==============*/
         .benefits-section{
@@ -938,8 +1034,32 @@
     /*=============Categories-section==============*/
     /*=============Feature-section==============*/
     /*=============Testimonials-section==============*/
+    .testimonials-section{
+
+        .test-image{
+            width: 100%;
+
+            img{
+                height: 250px;
+            }
+
+        }
+      
+    }
+        
     /*=============Blog-section==============*/
-    /*=============Blog-section==============*/
+.blog-section{
+
+    .blog-image{
+        width: 100%;
+
+        img{
+            height: 250px;
+        }
+
+    }
+   
+}    /*=============Blog-section==============*/
     /*=============Benefits-section==============*/
     /*=============Contact-section==============*/
      .contact-section{

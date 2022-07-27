@@ -541,8 +541,9 @@ ul.slick-dots li button {
 }
 .testimonials-section .test-image img {
   width: 100%;
-  position: relative;
-  transform: scaleY(1.5);
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .testimonials-section .test-content {
   width: 50%;
@@ -557,24 +558,17 @@ ul.slick-dots li button {
   color: rgba(33, 33, 33, 0.3803921569);
 }
 
-.btn-box {
-  position: relative;
-  bottom: -35px;
-  left: -30px;
-  background-color: red;
-  width: 100px;
-  height: 20px;
-}
-
 .slick-next {
   background-color: rgba(33, 33, 33, 0.3803921569);
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   cursor: pointer;
   padding: 10px;
+  z-index: 10;
+  transition: all 0.4s linear;
 }
 .slick-next .fas {
   color: #f1f1f1;
@@ -588,12 +582,19 @@ ul.slick-dots li button {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
+  z-index: 10;
+  transition: all 0.4s linear;
 }
 .slick-prev .fas {
   color: #f1f1f1;
   font-size: 1.5rem;
+}
+
+.slick-next:hover, .slick-prev:hover {
+  color: #8B7D7B;
+  background-color: rgba(241, 241, 241, 0.3137254902);
 }
 
 /*=============Blog-section==============*/
@@ -615,11 +616,22 @@ ul.slick-dots li button {
   color: #f1f1f1;
   font-weight: 400;
 }
+.blog-section .blog-content p {
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  padding-bottom: 0;
+}
 .blog-section .blog-image {
   width: 50%;
 }
 .blog-section .blog-image img {
-  height: 100%;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blog-section .slide-next {
   background-color: rgba(33, 33, 33, 0.3803921569);
@@ -627,9 +639,11 @@ ul.slick-dots li button {
   border: none;
   cursor: pointer;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -30px;
+  left: 0;
   padding: 10px;
+  transition: all 0.4s linear;
+  z-index: 10;
 }
 .blog-section .slide-next .fas {
   color: #f1f1f1;
@@ -643,12 +657,18 @@ ul.slick-dots li button {
   cursor: pointer;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   margin-left: 30px;
+  z-index: 10;
+  transition: all 0.4s linear;
 }
 .blog-section .slide-prev .fas {
   color: #f1f1f1;
   font-size: 1.5rem;
+}
+.blog-section .slide-next:hover, .blog-section .slide-prev:hover {
+  color: #8B7D7B;
+  background-color: rgba(0, 0, 0, 0.32);
 }
 
 /*=============Benefits-section==============*/
@@ -797,27 +817,22 @@ ul.slick-dots li button {
   html, body {
     font-size: 24px;
   }
-
   .para {
     line-height: 32px;
     font-size: 0.85rem;
   }
-
   .tag {
     padding: 15px 20px;
     background-color: #6D4C41;
     color: #f1f1f1;
   }
-
   /*=======Required-Extend=========*/
   .offer-section .offer-content .detail-btn, .casual-men-cate .casual .detail-btn, .woman-sport .detail-btn, .blog-section .blog-content a {
     padding: 15px 60px;
   }
-
   .header-section, .offer-section, .trend-section, .collection-section, .feature-section, .blog-section, .benefits-section, .contact-section {
     padding-bottom: 70px;
   }
-
   /*=============Header-section==============*/
   .header-section {
     height: 650px;
@@ -831,11 +846,9 @@ ul.slick-dots li button {
   .header-section .head-content {
     padding: 250px 0 0 0;
   }
-
   .nav-whole li a {
     font-size: 0.85rem;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     padding: 150px 15px 50px 15px;
@@ -843,14 +856,12 @@ ul.slick-dots li button {
   .offer-section .offer-content h2, .offer-section .offer-content h4, .offer-section .offer-content p {
     padding-bottom: 45px;
   }
-
   /*=============Trend-section==============*/
   /*=============Collection-section==============*/
   /*=============Categories-section==============*/
   .girl-fashion img {
     top: -300px;
   }
-
   /*=============Feature-section==============*/
   /*=============Testimonials-section==============*/
   .testimonials-section .test-content {
@@ -862,7 +873,6 @@ ul.slick-dots li button {
   .testimonials-section .test-content p {
     padding: 30px 0;
   }
-
   /*=============Blog-section==============*/
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
@@ -872,13 +882,11 @@ ul.slick-dots li button {
   .benefits-section .benefit h2 {
     padding: 25px 0;
   }
-
   /*=============Contact-section==============*/
   /*=============Footer-section==============*/
   .footer-section .footer-container {
     width: 50%;
   }
-
   .footer-nav ul li a {
     font-size: 0.75rem;
   }
@@ -888,26 +896,21 @@ ul.slick-dots li button {
   html, body {
     font-size: 22px;
   }
-
   .para {
     line-height: 26px;
   }
-
   .tag {
     padding: 15px 20px;
     background-color: #6D4C41;
     color: #f1f1f1;
   }
-
   /*=======Required-Extend=========*/
   .offer-section .offer-content .detail-btn, .casual-men-cate .casual .detail-btn, .woman-sport .detail-btn, .blog-section .blog-content a {
     padding: 12px 48px;
   }
-
   .header-section, .offer-section, .trend-section, .collection-section, .feature-section, .blog-section, .benefits-section, .contact-section {
     padding-bottom: 60px;
   }
-
   /*=============Header-section==============*/
   .header-section {
     height: 90%;
@@ -921,7 +924,6 @@ ul.slick-dots li button {
   .header-section .head-content {
     padding: 200px 0 0 0;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     padding: 130px 15px 40px 15px;
@@ -929,14 +931,12 @@ ul.slick-dots li button {
   .offer-section .offer-content h2, .offer-section .offer-content h4, .offer-section .offer-content p {
     padding-bottom: 35px;
   }
-
   /*=============Trend-section==============*/
   /*=============Collection-section==============*/
   /*=============Categories-section==============*/
   .girl-fashion img {
     top: -290px;
   }
-
   /*=============Feature-section==============*/
   /*=============Testimonials-section==============*/
   .testimonials-section .test-content {
@@ -948,7 +948,6 @@ ul.slick-dots li button {
   .testimonials-section .test-content p {
     padding: 30px 0;
   }
-
   /*=============Blog-section==============*/
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
@@ -958,7 +957,6 @@ ul.slick-dots li button {
   .benefits-section .benefit h2 {
     padding: 20px 0;
   }
-
   /*=============Contact-section==============*/
   /*=============Footer-section==============*/
 }
@@ -967,15 +965,12 @@ ul.slick-dots li button {
   .para {
     line-height: 24px;
   }
-
   .large-head {
     font-size: 2.2rem;
   }
-
   .medium-head {
     font-size: 1.8rem;
   }
-
   /*=======Required-Extend========= 
       %allButton{
           padding: 15px 60px;
@@ -999,7 +994,6 @@ ul.slick-dots li button {
   .header-section .head-content {
     padding: 120px 0 0 0;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     padding: 30px 10px;
@@ -1007,7 +1001,6 @@ ul.slick-dots li button {
   .offer-section .offer-content h2, .offer-section .offer-content h4, .offer-section .offer-content p {
     padding-bottom: 20px;
   }
-
   /*=============Trend-section==============*/
   .trend-section .review {
     padding: 5px;
@@ -1022,7 +1015,6 @@ ul.slick-dots li button {
     padding: 10px 0 0 0;
     line-height: 22px;
   }
-
   /*=============Collection-section==============*/
   /*=============Categories-section==============*/
   .categories-section .men-cate {
@@ -1037,22 +1029,48 @@ ul.slick-dots li button {
     -o-object-fit: contain;
        object-fit: contain;
   }
-
   .girl-fashion {
     background-color: #E5E8B1;
     height: 50px;
     justify-content: center;
   }
-
   /*=============Feature-section==============*/
   /*=============Testimonials-section==============*/
+  .testimonials-section .test-image {
+    width: 100%;
+  }
+  .testimonials-section .test-content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 70px 30px;
+  }
   /*=============Blog-section==============*/
+  .blog-section {
+    background-color: #8B7D7B;
+    padding-bottom: 0;
+  }
+  .blog-section .blog-content {
+    width: 60%;
+    margin: 0 auto;
+    order: 2;
+    padding: 70px 30px;
+  }
+  .blog-section .blog-image {
+    width: 100%;
+    order: 0;
+  }
+  .blog-section .blog-image img {
+    -o-object-position: top;
+       object-position: top;
+  }
+  .blog-section .slide-next {
+    bottom: -50px;
+  }
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
   .benefits-section .benefit {
     padding: 20px 0 0 0;
   }
-
   /*=============Contact-section==============*/
   /*=============Footer-section==============*/
 }
@@ -1061,12 +1079,10 @@ ul.slick-dots li button {
   .tag {
     padding: 12px 20px;
   }
-
   /*=======Required-Extend=========*/
   .offer-section .offer-content .detail-btn, .casual-men-cate .casual .detail-btn, .woman-sport .detail-btn, .blog-section .blog-content a {
     padding: 8px 35px;
   }
-
   /*=============Header-section==============*/
   .header-section .navigation {
     position: relative;
@@ -1109,7 +1125,6 @@ ul.slick-dots li button {
     justify-content: flex-end;
     align-items: center;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     width: 100%;
@@ -1121,7 +1136,6 @@ ul.slick-dots li button {
   .offer-section .offer-image {
     width: 100%;
   }
-
   /*=============Trend-section==============*/
   .trend-section .review {
     width: 50%;
@@ -1134,7 +1148,6 @@ ul.slick-dots li button {
     padding: 15px 0;
     line-height: 24px;
   }
-
   /*=============Collection-section==============*/
   .collection-section .collection, .collection-section .autumn {
     width: 50%;
@@ -1143,19 +1156,16 @@ ul.slick-dots li button {
     width: 100%;
     order: 2;
   }
-
   /*=============Categories-section==============*/
   .girl-fashion {
     padding: 20px 50px;
     justify-content: flex-start;
     height: 100px;
   }
-
   /*=============Feature-section==============*/
   .feature-section .feature-content {
     width: 50%;
   }
-
   /*=============Testimonials-section==============*/
   .testimonials-section .test-image {
     width: 100%;
@@ -1164,7 +1174,6 @@ ul.slick-dots li button {
     width: 100%;
     padding: 50px 30px;
   }
-
   /*=============Blog-section==============*/
   .blog-section .blog-content {
     width: 100%;
@@ -1172,7 +1181,6 @@ ul.slick-dots li button {
   .blog-section .blog-image {
     width: 100%;
   }
-
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
   .benefits-section .benefit {
@@ -1182,7 +1190,6 @@ ul.slick-dots li button {
   .benefits-section .benefit::before {
     margin: 20px 0;
   }
-
   /*=============Blog-section==============*/
   /*=============Contact-section==============*/
   /*=============Footer-section==============*/
@@ -1195,24 +1202,19 @@ ul.slick-dots li button {
   .para {
     line-height: 24px;
   }
-
   .large-head {
     font-size: 2rem;
   }
-
   .medium-head {
     font-size: 1.5rem;
   }
-
   .small-head {
     font-size: 1.2rem;
   }
-
   /*=======Required-Extend========= */
   .offer-section .offer-content .detail-btn, .casual-men-cate .casual .detail-btn, .woman-sport .detail-btn, .blog-section .blog-content a {
     padding: 8px 30px;
   }
-
   /*=============Header-section==============*/
   .header-section nav .logo {
     width: 15%;
@@ -1220,24 +1222,20 @@ ul.slick-dots li button {
   .header-section nav .nav-icon {
     width: 85%;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     padding: 50px 20px;
   }
-
   /*=============Trend-section==============*/
   .trend-section .review {
     width: 100%;
     text-align: center;
   }
-
   /*=============Collection-section==============*/
   .collection-section .collection, .collection-section .autumn, .collection-section .trending {
     width: 100%;
     order: 1;
   }
-
   /*=============Categories-section==============*/
   .categories-section .men-cate, .categories-section .woman-cate {
     padding: 0;
@@ -1247,46 +1245,52 @@ ul.slick-dots li button {
     -o-object-fit: contain;
        object-fit: contain;
   }
-
   .men-cate .head-cate {
     padding-bottom: 15px;
     margin-top: 0;
     width: 100%;
     text-align: center;
   }
-
   .casual-men-cate {
     margin: 10px 0;
   }
   .casual-men-cate .casual {
     padding: 10px;
   }
-
   .men-items .men-watch, .men-items .men-sheo {
     width: 100%;
     margin: 10px 0;
   }
-
   .woman-cate .woman-items .sheo, .woman-cate .woman-items .bag {
     width: 100%;
     margin: 10px 0;
   }
-
   .girl-fashion {
     height: 70px;
   }
-
   .woman-sport {
     padding: 30px 10px;
   }
-
   /*=============Feature-section==============*/
   .feature-section .feature-content {
     width: 100%;
   }
-
-  /*=============Testimonials-section==============*/
+  .testimonials-section .test-image {
+    width: 100%;
+  }
+  .testimonials-section .test-image img {
+    height: 350px;
+  }
   /*=============Blog-section==============*/
+  .blog-section .blog-content {
+    width: 100%;
+  }
+  .blog-section .blog-image {
+    width: 100%;
+  }
+  .blog-section .blog-image img {
+    height: 350px;
+  }
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
   .benefits-section .benefit {
@@ -1296,7 +1300,6 @@ ul.slick-dots li button {
   .benefits-section .benefit::before {
     margin: 20px 0;
   }
-
   /*=============Contact-section==============*/
   .contact-section .contact-image {
     width: 10%;
@@ -1307,7 +1310,6 @@ ul.slick-dots li button {
   .contact-section .contact-us {
     width: 75%;
   }
-
   /*=============Footer-section==============*/
   .footer-section .footer-container {
     width: 100%;
@@ -1318,12 +1320,10 @@ ul.slick-dots li button {
   .para {
     line-height: 22px;
   }
-
   /*=======Required-Extend========= */
   .offer-section .offer-content .detail-btn, .casual-men-cate .casual .detail-btn, .woman-sport .detail-btn, .blog-section .blog-content a {
     padding: 8px 20px;
   }
-
   /*=============Header-section==============*/
   .header-section nav .logo {
     width: 18%;
@@ -1331,7 +1331,6 @@ ul.slick-dots li button {
   .header-section nav .nav-icon {
     width: 82%;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     padding: 40px 10px;
@@ -1339,7 +1338,6 @@ ul.slick-dots li button {
   .offer-section .offer-content h2, .offer-section .offer-content h4, .offer-section .offer-content p {
     padding-bottom: 15px;
   }
-
   /*=============Trend-section==============*/
   .trend-section .review {
     padding: 15px 0;
@@ -1347,16 +1345,35 @@ ul.slick-dots li button {
   .trend-section .review p {
     padding: 5px 0;
   }
-
   /*=============Collection-section==============*/
   /*=============Categories-section==============*/
   .men-cate .head-cate {
     width: 100%;
   }
-
   /*=============Feature-section==============*/
   /*=============Testimonials-section==============*/
+  .testimonials-section .test-image {
+    width: 100%;
+  }
+  .testimonials-section .test-image img {
+    height: 300px;
+  }
+  .testimonials-section .test-content {
+    padding: 20px 10px;
+  }
   /*=============Blog-section==============*/
+  .blog-section .blog-content {
+    padding: 20px 10px;
+  }
+  .blog-section .blog-image {
+    width: 100%;
+  }
+  .blog-section .blog-image img {
+    height: 300px;
+  }
+  .blog-section .slide-next {
+    bottom: -15px;
+  }
   /*=============Blog-section==============*/
   /*============Benefits-section==============*/
   .benefits-section .benefit {
@@ -1366,7 +1383,6 @@ ul.slick-dots li button {
   .benefits-section .benefit::before {
     margin: 0;
   }
-
   /*=============Contact-section==============*/
   .contact-section .contact-image {
     width: 12%;
@@ -1374,7 +1390,6 @@ ul.slick-dots li button {
   .contact-section .contact-us {
     width: 95%;
   }
-
   /*=============Footer-section==============*/
   .copy-right {
     padding: 10px 0;
@@ -1428,18 +1443,28 @@ ul.slick-dots li button {
   .header-section nav .nav-icon {
     width: 80%;
   }
-
   /*==============Offer-section==============*/
   .offer-section .offer-content {
     padding: 25px 10px;
   }
-
   /*=============Trend-section==============*/
   /*=============Collection-section==============*/
   /*=============Categories-section==============*/
   /*=============Feature-section==============*/
   /*=============Testimonials-section==============*/
+  .testimonials-section .test-image {
+    width: 100%;
+  }
+  .testimonials-section .test-image img {
+    height: 250px;
+  }
   /*=============Blog-section==============*/
+  .blog-section .blog-image {
+    width: 100%;
+  }
+  .blog-section .blog-image img {
+    height: 250px;
+  }
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
   /*=============Contact-section==============*/
@@ -1447,7 +1472,6 @@ ul.slick-dots li button {
     width: 100%;
     padding: 0 10px;
   }
-
   /*=============Footer-section==============*/
 }
 /*========Animation=======*/
