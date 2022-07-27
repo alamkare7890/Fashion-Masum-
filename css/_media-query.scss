@@ -96,9 +96,24 @@
         }
            
     }
+    .test-image{
+
+        img{
+            height: 550px;
+        }
+    }
 }
 
 /*=============Blog-section==============*/
+.blog-section{
+
+    .blog-image{
+
+        img{
+            height: 550px;
+        }
+    }
+}
 /*=============Blog-section==============*/
 /*=============Benefits-section==============*/
 .benefits-section{
@@ -228,9 +243,24 @@
         }
            
     }
+    .test-image{
+
+        img{
+            height: 520px;
+        }
+    }
 }
 /*=============Blog-section==============*/
 /*=============Blog-section==============*/
+.blog-section{
+
+    .blog-image{
+
+        img{
+            height: 520px;
+        }
+    }
+}
 /*=============Benefits-section==============*/
 .benefits-section{
 
@@ -438,15 +468,24 @@
             .logo{
                 width: 10%; 
             }
+            .nav-icon{
+                z-index: 10;
+                a{
+                    font-size: 3rem;
+                }
+
+            }
             .nav-whole{
-                display: none;
+                display: flex;
+                flex-wrap: nowrap;
                 width: 100%;
                 flex-direction: column;
                 position: absolute;
-                top: 40px;
+                top: 120px;
                 left: 0;
                 padding: 50px;
                 background-color: rgba(0, 0, 0, 0.253);
+                z-index: 10;
                 li{
                     display: inline;
                     padding: 10px;
@@ -456,7 +495,11 @@
                     background-color: #f1f1f171;
                     color: #000;
                 }
+                display: none;
 
+            }
+            .disNav{
+                display: flex;
             }
 
             .nav-icon{
@@ -532,6 +575,24 @@
 
 }
 /*=============Categories-section==============*/
+.categories-section{
+
+    .woman-cate{
+
+        .image{
+            
+            img{    
+                height: 100%;
+                width: 150px;
+                object-fit: contain;
+            }
+
+        }
+    }
+  
+}
+
+
 
 .girl-fashion{
     padding: 20px 50px;
@@ -627,7 +688,7 @@
 /*=============Header-section==============*/
     .header-section{
 
-        nav{
+        .navigation{
 
             .logo{
                 width: 15%; 
@@ -729,6 +790,20 @@
         padding: 30px 10px;
     }
 
+    .woman-cate{
+
+        .image{
+            
+            img{    
+                height: 90%;
+                width: 120px;
+                object-fit: contain;
+            }
+
+        }
+    }
+  
+
 
     /*=============Feature-section==============*/
     .feature-section{
@@ -782,7 +857,7 @@
         margin: 20px 0;
     }
 
-}
+    }
     /*=============Contact-section==============*/
     .contact-section{
 
@@ -831,10 +906,15 @@
 /*=============Header-section==============*/
     .header-section{
 
-        nav{
+        .navigation{
 
             .logo{
                 width: 18%; 
+
+                img{
+                    width: 100%;
+                }                    
+
             }
             
             .nav-icon{
@@ -885,7 +965,23 @@
             width: 100%;
         }
     }
+    .categories-section{
+        .woman-cate{
 
+            .image{
+                
+                img{    
+                    height: 90%;
+                    width: 120px;
+                    object-fit: contain;
+                }
+
+            }
+        }
+    }
+    .girl-fashion{
+        height: 0;
+    }
     /*=============Feature-section==============*/
     /*=============Testimonials-section==============*/
     .testimonials-section{
@@ -904,7 +1000,7 @@
     }
         
     /*=============Blog-section==============*/
-.blog-section{
+    .blog-section{
 
     .blog-content{
         padding: 20px 10px;
@@ -946,6 +1042,16 @@
 
             .contact-us{
                 width: 95%;
+
+            }   
+            form{
+
+                .inside-btn{
+    
+                    .form-btn{
+                        padding: 15px 20px;
+                    }
+                }
 
             }
         }
@@ -999,7 +1105,7 @@
     /*=============Header-section==============*/
     .header-section{
 
-        nav{
+        .navigation{
 
             .logo{
                 width: 20%; 
@@ -1007,6 +1113,7 @@
             
             .nav-icon{
                 width: 80%;
+
             }
 
         }

@@ -70,7 +70,7 @@ $(document).ready(function () {
       {
         breakpoint: 1920,
           setting:{
-      
+
           }
       
       
@@ -103,21 +103,29 @@ $(document).ready(function () {
     
     prevArrow: "<button type='button' class='slide-prev pull-left'><i class='fas fa-arrow-right aria-hidden='true'></i></button>",
     nextArrow: "<button type='button' class='slide-next pull-right'><i class='fas fa-arrow-left aria-hidden='true'></i></button>",
-  /*
-    resposive:[
+  
+   /* resposive:[
       {
-        breakpoint: 768,
+        breakpoint: 1920,
         settings: {
-          
+          arrows: false,
+        
+        }
+      
+      
+      },
+      {
+        breakpoint: 1680,
+        settings: {
+          arrows: false,
         
         }
       
       
       }
 
-
-  ]
-    */
+  ]*/
+    
     
     
     
@@ -171,8 +179,14 @@ $(document).ready(function () {
   /*=========nav-icon==========*/
   $("#navBtn").click(function () {
   
-    $("#openNav").slideToggle();
+    $("#openNav").addClass('disNav');
     
+  })
+  $('#navBtn').click(function () {
+  
+    $("#openNav").addClass('disNav');
+
+  
   })
   
   

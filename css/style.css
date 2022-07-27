@@ -672,6 +672,9 @@ ul.slick-dots li button {
 }
 
 /*=============Benefits-section==============*/
+.benefits-section {
+  padding-top: 30px;
+}
 .benefits-section .benefit {
   width: 32%;
   padding: 10px 30px;
@@ -781,7 +784,7 @@ ul.slick-dots li button {
   height: 40px;
   background-color: #cfd8dc;
   padding: 5px;
-  margin-left: 50px;
+  margin: 0 20px;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
@@ -873,7 +876,13 @@ ul.slick-dots li button {
   .testimonials-section .test-content p {
     padding: 30px 0;
   }
+  .testimonials-section .test-image img {
+    height: 550px;
+  }
   /*=============Blog-section==============*/
+  .blog-section .blog-image img {
+    height: 550px;
+  }
   /*=============Blog-section==============*/
   /*=============Benefits-section==============*/
   .benefits-section .benefit {
@@ -948,8 +957,14 @@ ul.slick-dots li button {
   .testimonials-section .test-content p {
     padding: 30px 0;
   }
+  .testimonials-section .test-image img {
+    height: 520px;
+  }
   /*=============Blog-section==============*/
   /*=============Blog-section==============*/
+  .blog-section .blog-image img {
+    height: 520px;
+  }
   /*=============Benefits-section==============*/
   .benefits-section .benefit {
     width: 33%;
@@ -1100,15 +1115,24 @@ ul.slick-dots li button {
   .header-section .navigation .logo {
     width: 10%;
   }
+  .header-section .navigation .nav-icon {
+    z-index: 10;
+  }
+  .header-section .navigation .nav-icon a {
+    font-size: 3rem;
+  }
   .header-section .navigation .nav-whole {
-    display: none;
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     flex-direction: column;
     position: absolute;
-    top: 40px;
+    top: 120px;
     left: 0;
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.253);
+    z-index: 10;
+    display: none;
   }
   .header-section .navigation .nav-whole li {
     display: inline;
@@ -1118,6 +1142,9 @@ ul.slick-dots li button {
   .header-section .navigation .nav-whole li:hover {
     background-color: rgba(241, 241, 241, 0.4431372549);
     color: #000;
+  }
+  .header-section .navigation .disNav {
+    display: flex;
   }
   .header-section .navigation .nav-icon {
     display: flex;
@@ -1157,6 +1184,12 @@ ul.slick-dots li button {
     order: 2;
   }
   /*=============Categories-section==============*/
+  .categories-section .woman-cate .image img {
+    height: 100%;
+    width: 150px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .girl-fashion {
     padding: 20px 50px;
     justify-content: flex-start;
@@ -1216,10 +1249,10 @@ ul.slick-dots li button {
     padding: 8px 30px;
   }
   /*=============Header-section==============*/
-  .header-section nav .logo {
+  .header-section .navigation .logo {
     width: 15%;
   }
-  .header-section nav .nav-icon {
+  .header-section .navigation .nav-icon {
     width: 85%;
   }
   /*==============Offer-section==============*/
@@ -1270,6 +1303,12 @@ ul.slick-dots li button {
   }
   .woman-sport {
     padding: 30px 10px;
+  }
+  .woman-cate .image img {
+    height: 90%;
+    width: 120px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   /*=============Feature-section==============*/
   .feature-section .feature-content {
@@ -1325,10 +1364,13 @@ ul.slick-dots li button {
     padding: 8px 20px;
   }
   /*=============Header-section==============*/
-  .header-section nav .logo {
+  .header-section .navigation .logo {
     width: 18%;
   }
-  .header-section nav .nav-icon {
+  .header-section .navigation .logo img {
+    width: 100%;
+  }
+  .header-section .navigation .nav-icon {
     width: 82%;
   }
   /*==============Offer-section==============*/
@@ -1349,6 +1391,15 @@ ul.slick-dots li button {
   /*=============Categories-section==============*/
   .men-cate .head-cate {
     width: 100%;
+  }
+  .categories-section .woman-cate .image img {
+    height: 90%;
+    width: 120px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .girl-fashion {
+    height: 0;
   }
   /*=============Feature-section==============*/
   /*=============Testimonials-section==============*/
@@ -1389,6 +1440,9 @@ ul.slick-dots li button {
   }
   .contact-section .contact-us {
     width: 95%;
+  }
+  .contact-section form .inside-btn .form-btn {
+    padding: 15px 20px;
   }
   /*=============Footer-section==============*/
   .copy-right {
@@ -1437,10 +1491,10 @@ ul.slick-dots li button {
           }
       */
   /*=============Header-section==============*/
-  .header-section nav .logo {
+  .header-section .navigation .logo {
     width: 20%;
   }
-  .header-section nav .nav-icon {
+  .header-section .navigation .nav-icon {
     width: 80%;
   }
   /*==============Offer-section==============*/
