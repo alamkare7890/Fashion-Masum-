@@ -171,11 +171,15 @@ li.active {
 .header-section .head-content .button-box a {
   display: inline-block;
   text-decoration: none;
+  transition: all 0.4s linear;
+  color: #f1f1f1;
 }
 .header-section .head-content .button-box a .fas {
   font-size: 2rem;
   cursor: pointer;
-  color: #f1f1f1;
+}
+.header-section .head-content .button-box a:hover {
+  color: #6D4C41;
 }
 .header-section .nav-icon {
   display: none;

@@ -53,14 +53,18 @@
             a{
                 display: inline-block;
                 text-decoration: none;
+                transition: all 0.4s linear;
+                color: #f1f1f1;
                 .fas{
                     font-size: 2rem;
                     cursor: pointer;
-                    color: #f1f1f1;
 
                 }
 
             }   
+            a:hover{
+                color: #6D4C41;
+            }
         }
     }
 
