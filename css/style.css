@@ -10,7 +10,24 @@ html, body {
   height: 100%;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  position: relative;
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border-left: 2px solid #b7ed08;
+  border-right: 2px solid #6D4C41;
+  background-color: #f1f1f1;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(16, 16, 16, 0.3490196078);
+  box-shadow: 0 0 15px 5px #000;
 }
 
 .large-head {
@@ -74,6 +91,34 @@ html, body {
 .contact-section, .benefits-section, .blog-section, .feature-section, .collection-section, .trend-section, .offer-section, .header-section {
   width: 100%;
   padding-bottom: 50px;
+}
+
+li.active {
+  border: 1px solid #f1f1f1;
+}
+
+.icon-top {
+  position: fixed;
+  text-decoration: none;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #6D4C41;
+  background-color: rgba(241, 241, 241, 0.6666666667);
+  height: 60px;
+  border-radius: 5px;
+  width: 60px;
+  transition: all 0.4s linear;
+  border: 2px solid rgba(0, 0, 0, 0.437);
+}
+
+.icon-top:hover {
+  background: transparent;
+  border: 2px solid #f1f1f1;
 }
 
 /*=============Header-section==============*/
@@ -1670,8 +1715,8 @@ ul.slick-dots li button {
 
 /*========Footer-Icon======*/
 .footer-nav ul li:hover {
-  -webkit-text-decoration: 3px #3E2723 underline;
-          text-decoration: 3px #3E2723 underline;
+  -webkit-text-decoration: 1px #3E2723 underline;
+          text-decoration: 1px #3E2723 underline;
 }
 
 .footer-container .footer-icon a:hover {
