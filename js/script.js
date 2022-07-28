@@ -24,6 +24,8 @@ $(document).ready(function () {
             slidesToShow: 4,
             slidesToScroll: 3,
             arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1500, 
           }
         },
     
@@ -33,6 +35,8 @@ $(document).ready(function () {
             slidesToScroll: 3,
             slidesToShow: 3,
             arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1500, 
 
           }
         },
@@ -43,6 +47,8 @@ $(document).ready(function () {
             slidesToShow: 2,
             arrows: false,
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 1500, 
           }
         
         },
@@ -53,6 +59,8 @@ $(document).ready(function () {
             slidesToShow: 1,
             arrows: false,
             dots: false,
+            autoplay: true,
+            autoplaySpeed: 1500, 
             
           }
         
