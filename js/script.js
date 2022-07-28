@@ -13,7 +13,7 @@ $(document).ready(function () {
             dots: true,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 1500,
+            autoplaySpeed: 1500, 
           }
       
         },
