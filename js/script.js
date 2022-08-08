@@ -189,15 +189,12 @@ $(document).ready(function () {
   /*=========nav-icon==========*/
   $("#navBtn").click(function () {
   
-    $("#openNav").addClass('disNav');
+    $("#openNav").toggleClass('disNav');
     
   })
-  $('#navBtn').click(function () {
   
-    $("#openNav").addClass('disNav');
 
   
-  })
   
   
   /*======Animation (AOS)=====installation=====*/
