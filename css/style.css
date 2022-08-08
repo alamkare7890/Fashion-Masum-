@@ -126,7 +126,7 @@ li.active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 550px;
   min-height: 350px;
   position: relative;
   padding-bottom: 200px;
@@ -1172,6 +1172,7 @@ ul.slick-dots li button {
   }
   .header-section .navigation .nav-whole {
     display: flex;
+    transition: all 0.4s linear;
     flex-wrap: nowrap;
     width: 100%;
     flex-direction: column;
@@ -1194,6 +1195,7 @@ ul.slick-dots li button {
   }
   .header-section .navigation .disNav {
     display: flex;
+    transition: all 0.8s linear;
   }
   .header-section .navigation .nav-icon {
     display: flex;
@@ -1205,12 +1207,14 @@ ul.slick-dots li button {
   .offer-section .offer-content {
     width: 100%;
     padding: 50px 70px;
+    order: 1;
   }
   .offer-section .offer-content h2, .offer-section .offer-content h4, .offer-section .offer-content p {
     padding-bottom: 25px;
   }
   .offer-section .offer-image {
     width: 100%;
+    order: 0;
   }
   /*=============Trend-section==============*/
   .trend-section .review {
@@ -1335,11 +1339,13 @@ ul.slick-dots li button {
   }
   .casual-men-cate {
     margin: 10px 0;
+    background-color: #E4D1D1;
   }
   .casual-men-cate .casual {
     padding: 10px;
   }
   .men-items .men-watch, .men-items .men-sheo {
+    background-color: #E4D1D1;
     width: 100%;
     margin: 10px 0;
   }
@@ -1352,6 +1358,10 @@ ul.slick-dots li button {
   }
   .woman-sport {
     padding: 30px 10px;
+    background: #e4d1d1;
+  }
+  .girl-fashion {
+    background: #e4d1d1;
   }
   .woman-cate .image img {
     height: 90%;

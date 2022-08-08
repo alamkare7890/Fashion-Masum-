@@ -477,6 +477,7 @@
             }
             .nav-whole{
                 display: flex;
+                transition: all 0.4s linear;
                 flex-wrap: nowrap;
                 width: 100%;
                 flex-direction: column;
@@ -500,6 +501,7 @@
             }
             .disNav{
                 display: flex;
+                transition: all 0.8s linear;
             }
 
             .nav-icon{
@@ -533,6 +535,7 @@
     .offer-content{
         width: 100%;
         padding: 50px 70px;
+        order: 1;
         h2,h4,p{
             padding-bottom: 25px;
         }       
@@ -540,6 +543,7 @@
     }
     .offer-image{
         width: 100%;
+        order: 0;
     }
 
 }
@@ -758,6 +762,7 @@
     }
     .casual-men-cate{
         margin: 10px 0;
+        background-color: #E4D1D1;
 
         .casual{
             padding: 10px;
@@ -768,6 +773,7 @@
     .men-items{
 
         .men-watch, .men-sheo{
+            background-color: #E4D1D1;
             width: 100%;
             margin: 10px 0;
         }
@@ -788,8 +794,13 @@
     }
     .woman-sport{
         padding: 30px 10px;
+        background: #e4d1d1;
     }
 
+    .girl-fashion{
+        background: #e4d1d1;
+        
+    }
     .woman-cate{
 
         .image{
